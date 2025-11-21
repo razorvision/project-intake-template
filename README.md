@@ -1,8 +1,36 @@
 # Project Intake Template Repository
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Node.js](https://img.shields.io/badge/Node.js-18%2B-green.svg)](https://nodejs.org/)
+[![GitHub Issues](https://img.shields.io/github/issues/razorvision/project-intake-template.svg)](https://github.com/razorvision/project-intake-template/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/razorvision/project-intake-template.svg)](https://github.com/razorvision/project-intake-template/stargazers)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 A comprehensive template repository for quickly bootstrapping new projects with best practices, established workflows, automated tooling, and complete documentation infrastructure.
 
 > **🎯 85-90% time savings** on project setup (7-10 hours → 1-2 hours)
+
+## 📑 Table of Contents
+
+- [Quick Start](#-quick-start)
+- [What's Included](#whats-included)
+  - [Project Management Infrastructure](#-project-management-infrastructure)
+  - [Development Guidelines](#-development-guidelines)
+  - [Claude Code Integration](#-claude-code-integration)
+  - [Project Intake System](#-project-intake-system)
+  - [Automation Tools](#-automation-tools)
+  - [Git Workflow Protection](#️-git-workflow-protection)
+- [Repository Structure](#repository-structure)
+- [Usage Guide](#usage-guide)
+- [Key Features](#key-features)
+- [Installation & Setup](#installation--setup)
+- [Customization](#customization)
+- [Project Management Workflow](#project-management-workflow)
+- [Best Practices](#best-practices)
+- [Time Savings](#time-savings)
+- [Documentation](#documentation)
+- [Support & Resources](#support--resources)
+- [Contributing](#contributing)
 
 ## 🚀 Quick Start
 
@@ -18,6 +46,19 @@ A comprehensive template repository for quickly bootstrapping new projects with 
 4. **Follow the [POST_TEMPLATE_CHECKLIST.md](POST_TEMPLATE_CHECKLIST.md)** for complete setup
 
 **📖 New to templates?** Read [TEMPLATE_USAGE.md](TEMPLATE_USAGE.md) for detailed instructions.
+
+## ✨ Key Highlights
+
+| Feature | What You Get | Time Saved |
+|---------|-------------|------------|
+| 🚀 **Pre-commit Hooks** | 20+ automated quality checks (ESLint, Prettier, TypeScript, security scanning) | ~2 hours |
+| 🤖 **Claude Code Integration** | 8 custom slash commands + MCP server templates for extending capabilities | ~3 hours |
+| ⚙️ **GitHub Actions** | Complete CI/CD pipeline (testing, security, releases, PR validation) | ~2 hours |
+| 📋 **Project Management** | Issue/PR templates, labels, project board guides with automation | ~1 hour |
+| 📚 **Documentation** | Comprehensive guides for coding standards, security, workflows | ~2-3 hours |
+| 🔒 **Security** | Secret detection, CodeQL scanning, security checklists, best practices | ~1-2 hours |
+
+**Total Time Savings: 11-13 hours → ~1 hour setup**
 
 ## What's Included
 
