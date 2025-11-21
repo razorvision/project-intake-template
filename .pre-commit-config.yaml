@@ -1,0 +1,200 @@
+# Pre-commit Hooks Configuration
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+
+# Setup:
+# 1. Install pre-commit: npm install -D pre-commit (or pip install pre-commit)
+# 2. Install git hooks: npx pre-commit install (or pre-commit install)
+# 3. Run on all files: npx pre-commit run --all-files
+
+# To skip hooks temporarily: git commit --no-verify
+
+default_language_version:
+  python: python3.10
+  node: "20.0.0"
+
+repos:
+  # General file checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      # Prevent committing large files
+      - id: check-added-large-files
+        args: ["--maxkb=500"]
+        exclude: ^(package-lock\.json|yarn\.lock|pnpm-lock\.yaml)$
+
+      # Check for files that would conflict across case-insensitive filesystems
+      - id: check-case-conflict
+
+      # Ensure files end with a newline
+      - id: end-of-file-fixer
+        exclude: ^(\.svg|\.png|\.jpg|\.ico)$
+
+      # Prevent merge conflict markers from being committed
+      - id: check-merge-conflict
+
+      # Check YAML files for syntax errors
+      - id: check-yaml
+        args: ["--unsafe"] # Allow custom YAML tags
+        exclude: ^\.github/workflows/
+
+      # Check JSON files for syntax errors
+      - id: check-json
+
+      # Check TOML files for syntax errors
+      - id: check-toml
+
+      # Remove trailing whitespace
+      - id: trailing-whitespace
+        args: ["--markdown-linebreak-ext=md"]
+
+      # Detect private keys
+      - id: detect-private-key
+
+      # Prevent committing directly to main/master
+      - id: no-commit-to-branch
+        args: ["--branch", "main", "--branch", "master"]
+
+      # Fix mixed line endings
+      - id: mixed-line-ending
+        args: ["--fix=lf"]
+
+  # Security: Check for secrets
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.4.0
+    hooks:
+      - id: detect-secrets
+        args: ["--baseline", ".secrets.baseline"]
+        exclude: package(-lock)?\.json
+
+  # TypeScript/JavaScript: Linting with ESLint
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: v8.56.0
+    hooks:
+      - id: eslint
+        files: \.(js|jsx|ts|tsx)$
+        types: [file]
+        args: ["--fix", "--max-warnings=0"]
+        additional_dependencies:
+          - eslint@^8.56.0
+          - "@typescript-eslint/eslint-plugin@^6.0.0"
+          - "@typescript-eslint/parser@^6.0.0"
+
+  # TypeScript/JavaScript: Formatting with Prettier
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v3.1.0
+    hooks:
+      - id: prettier
+        files: \.(js|jsx|ts|tsx|json|yml|yaml|md|css|scss|html)$
+        args: ["--write", "--ignore-unknown"]
+
+  # TypeScript: Type checking
+  - repo: local
+    hooks:
+      - id: typescript-check
+        name: TypeScript Type Check
+        entry: npx tsc --noEmit
+        language: system
+        types: [ts, tsx]
+        pass_filenames: false
+        always_run: true
+
+  # JavaScript/TypeScript: Run tests
+  - repo: local
+    hooks:
+      - id: run-tests
+        name: Run Tests
+        entry: npm test
+        language: system
+        pass_filenames: false
+        always_run: false # Set to true if you want tests to run on every commit
+
+  # Python: Formatting with Black
+  - repo: https://github.com/psf/black
+    rev: 23.12.1
+    hooks:
+      - id: black
+        language_version: python3.10
+        args: ["--line-length=100"]
+
+  # Python: Linting with Ruff
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.1.11
+    hooks:
+      - id: ruff
+        args: ["--fix"]
+
+  # Python: Type checking with mypy
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.8.0
+    hooks:
+      - id: mypy
+        additional_dependencies: [types-all]
+        args: ["--strict", "--ignore-missing-imports"]
+
+  # Python: Check docstrings
+  - repo: https://github.com/PyCQA/pydocstyle
+    rev: 6.3.0
+    hooks:
+      - id: pydocstyle
+        args: ["--convention=google"]
+
+  # Python: Security checks
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.7.6
+    hooks:
+      - id: bandit
+        args: ["-c", "pyproject.toml"]
+        additional_dependencies: ["bandit[toml]"]
+
+  # Markdown: Linting
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.38.0
+    hooks:
+      - id: markdownlint
+        args: ["--fix"]
+
+  # Commit message validation (Conventional Commits)
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v3.0.0
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
+        args: [] # Add --strict to enforce strictly
+
+  # Dockerfile linting
+  - repo: https://github.com/hadolint/hadolint
+    rev: v2.12.0
+    hooks:
+      - id: hadolint-docker
+        args: ["--ignore", "DL3008", "--ignore", "DL3009"]
+
+  # Shell script linting
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.9.0.6
+    hooks:
+      - id: shellcheck
+
+  # Check for TODO/FIXME comments (warning only)
+  - repo: local
+    hooks:
+      - id: check-todos
+        name: Check for TODO/FIXME
+        entry: bash -c 'git diff --cached --name-only | xargs grep -n "TODO\|FIXME" || true'
+        language: system
+        pass_filenames: false
+        always_run: true
+        verbose: true
+
+# Configuration for CI
+ci:
+  autofix_commit_msg: |
+    [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+    for more information, see https://pre-commit.ci
+  autofix_prs: true
+  autoupdate_branch: ""
+  autoupdate_commit_msg: "[pre-commit.ci] pre-commit autoupdate"
+  autoupdate_schedule: weekly
+  skip: [] # Optionally skip specific hooks in CI
+  submodules: false

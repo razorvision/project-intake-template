@@ -116,9 +116,18 @@ The Project Intake System automates the documentation and setup of existing proj
 ### 🛡️ Git Workflow Protection
 
 **Pre-Commit Hooks:**
+- [Pre-commit Configuration](.pre-commit-config.yaml) - Comprehensive code quality checks
+- [Pre-commit Hooks Guide](.pre-commit-hooks-README.md) - Setup and usage documentation
+- **Automated Checks:**
+  - ESLint and Prettier (formatting)
+  - TypeScript type checking
+  - Secret detection (prevent credential leaks)
+  - Security scanning (Bandit for Python)
+  - Commit message validation (Conventional Commits)
+  - Markdown, Docker, and shell script linting
+  - Large file detection
+  - Merge conflict detection
 - Blocks direct commits to `main` branch
-- Enforces feature branch workflow
-- Ensures code review process
 - Cross-platform support (Mac/Linux/Windows)
 
 ## Repository Structure
@@ -163,10 +172,15 @@ project-intake-template/
 │   ├── config.template.json   # Configuration template
 │   ├── templates/             # Reusable file templates
 │   └── scripts/               # Setup automation scripts
+├── .mcp-templates/            # MCP server templates
+│   ├── README.md             # Templates overview
+│   ├── nodejs/               # Node.js/TypeScript template
+│   └── python/               # Python template
 ├── tools/                      # Automation utilities
 ├── CODING_STANDARDS.md        # Code quality guidelines
 ├── BRANCH_STRATEGY.md         # Git workflow guide
 ├── DOCUMENTATION_GUIDELINES.md # Documentation best practices
+├── CODE_OF_CONDUCT.md         # Community guidelines
 ├── MCP_SETUP.md               # MCP server setup
 ├── MCP_SECURITY.md            # MCP security best practices
 ├── SECURITY.md                # Security policy and best practices
@@ -174,6 +188,9 @@ project-intake-template/
 ├── POST_TEMPLATE_CHECKLIST.md # Setup checklist
 ├── QUICKSTART.md              # Quick reference
 ├── .mcp.json                  # MCP server configuration
+├── .pre-commit-config.yaml    # Pre-commit hooks configuration
+├── .pre-commit-hooks-README.md # Pre-commit setup guide
+├── .secrets.baseline          # Secret detection baseline
 ├── setup-labels.sh            # Label creation script (Unix)
 └── setup-labels.bat           # Label creation script (Windows)
 ```
@@ -267,6 +284,13 @@ cd your-new-repo
 bash .project-intake/scripts/setup-hooks.sh  # Mac/Linux/Git Bash
 # OR
 powershell -ExecutionPolicy Bypass -File .project-intake/scripts/setup-hooks.ps1  # Windows
+
+# 3a. Install pre-commit framework (optional but recommended)
+npm install -D pre-commit      # Node.js projects
+# OR
+pip install pre-commit         # Python projects
+npx pre-commit install         # Install git hooks
+npx pre-commit run --all-files # Initial run
 
 # 4. Create labels (requires GitHub CLI)
 bash setup-labels.sh  # Mac/Linux
