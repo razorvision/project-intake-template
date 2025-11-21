@@ -14,6 +14,7 @@ A comprehensive template repository for quickly bootstrapping new projects with 
 
 - [Quick Start](#-quick-start)
 - [What's Included](#whats-included)
+  - [Testing Infrastructure](#-testing-infrastructure)
   - [Project Management Infrastructure](#-project-management-infrastructure)
   - [Development Guidelines](#-development-guidelines)
   - [Claude Code Integration](#-claude-code-integration)
@@ -54,13 +55,44 @@ A comprehensive template repository for quickly bootstrapping new projects with 
 | 🚀 **Pre-commit Hooks** | 20+ automated quality checks (ESLint, Prettier, TypeScript, security scanning) | ~2 hours |
 | 🤖 **Claude Code Integration** | 8 custom slash commands + MCP server templates for extending capabilities | ~3 hours |
 | ⚙️ **GitHub Actions** | Complete CI/CD pipeline (testing, security, releases, PR validation) | ~2 hours |
+| 🧪 **Testing Infrastructure** | Django/Docker testing template with pytest, auto-discovery, custom commands | ~1-2 hours |
 | 📋 **Project Management** | Issue/PR templates, labels, project board guides with automation | ~1 hour |
 | 📚 **Documentation** | Comprehensive guides for coding standards, security, workflows | ~2-3 hours |
 | 🔒 **Security** | Secret detection, CodeQL scanning, security checklists, best practices | ~1-2 hours |
 
-**Total Time Savings: 11-13 hours → ~1 hour setup**
+**Total Time Savings: 12-15 hours → ~1 hour setup**
 
 ## What's Included
+
+### 🧪 Testing Infrastructure
+
+**Django/Docker Testing Template** (`testing-template-packet/`)
+
+Complete testing setup for Django projects with Docker containerization:
+
+- **Auto-Discovery Testing** - Custom `/test` slash command that intelligently discovers and runs relevant tests
+- **Comprehensive Documentation** - 8 files (~1,300 lines) covering setup, usage, and best practices
+- **Docker Integration** - Windows/PowerShell compatible commands for containerized testing
+- **Pytest Configuration** - Pre-configured markers (unit, integration, slow, playwright) and settings
+- **Example Tests** - Real-world test patterns with mocks, fixtures, and assertions
+- **Quick Reference** - One-page cheat sheet for common testing commands
+
+**Key Files:**
+- `README.md` - Testing setup overview and features
+- `START-HERE.md` - Quick start guide with 8-step implementation
+- `.claude/commands/test.md` - Custom slash command for auto-discovery
+- `pytest.ini.example` - Pytest configuration template
+- `QUICK-REFERENCE.md` - Command cheat sheet
+- `SETUP-CHECKLIST.md` - Step-by-step setup guide
+- `docs/TESTING.md` - Comprehensive testing documentation
+- `tests/test_example.py` - Example test patterns
+
+**Customization Required:**
+- Update container name (default: `wiseloan-core-core-1`)
+- Update test paths to match your project structure
+- Adapt pytest markers for your testing needs
+
+**Time Savings:** 1-2 hours of testing infrastructure setup → 15 minutes
 
 ### 📋 Project Management Infrastructure
 
@@ -217,6 +249,15 @@ project-intake-template/
 │   ├── README.md             # Templates overview
 │   ├── nodejs/               # Node.js/TypeScript template
 │   └── python/               # Python template
+├── testing-template-packet/   # Django/Docker testing template
+│   ├── README.md             # Testing setup overview
+│   ├── START-HERE.md         # Quick start guide
+│   ├── SETUP-CHECKLIST.md    # Step-by-step setup
+│   ├── QUICK-REFERENCE.md    # Command cheat sheet
+│   ├── pytest.ini.example    # Pytest configuration
+│   ├── .claude/commands/test.md # Custom test command
+│   ├── docs/TESTING.md       # Comprehensive testing guide
+│   └── tests/test_example.py # Example test patterns
 ├── tools/                      # Automation utilities
 ├── CODING_STANDARDS.md        # Code quality guidelines
 ├── BRANCH_STRATEGY.md         # Git workflow guide
@@ -441,10 +482,11 @@ gh issue list --label "status: needs-review"
 | Codebase exploration | 2-3 hours | 10 min | 85% |
 | README generation | 1-2 hours | 5 min | 95% |
 | Git workflow setup | 1 hour | 5 min | 90% |
+| Testing infrastructure | 1-2 hours | 15 min | 85% |
 | Documentation | 2-3 hours | 15 min | 90% |
 | Project board setup | 30 min | 5 min | 80% |
 | Quality standards | 1 hour | 10 min | 80% |
-| **Total** | **7-10 hours** | **50 min** | **85-90%** |
+| **Total** | **8-12 hours** | **65 min** | **85-90%** |
 
 ## Documentation
 
