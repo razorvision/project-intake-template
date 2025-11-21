@@ -43,16 +43,27 @@ A comprehensive template repository for quickly bootstrapping new projects with 
 - [DOCUMENTATION_GUIDELINES.md](DOCUMENTATION_GUIDELINES.md) - How to write and maintain documentation
 - [QUICKSTART.md](QUICKSTART.md) - Quick reference for common workflows
 
-### 🤖 MCP Integration (Model Context Protocol)
+### 🤖 Claude Code Integration
 
-**Automated Testing & Workflows:**
-- [MCP_SETUP.md](MCP_SETUP.md) - Complete guide for setting up MCP servers with Claude Code
+**MCP Servers (Model Context Protocol):**
+- [MCP_SETUP.md](MCP_SETUP.md) - Complete guide for setting up MCP servers
 - [MCP_SECURITY.md](MCP_SECURITY.md) - Security best practices for MCP servers
 - `.mcp.json` - Pre-configured MCP servers (Playwright, filesystem, git, memory)
 - Enables subagent control for complex multi-step testing scenarios
 - Screenshot capture and visual regression testing
 - Multi-browser compatibility testing
 - Network monitoring and performance analysis
+
+**Slash Commands Library (`.claude/commands/`):**
+- [Command Library README](.claude/commands/README.md) - Complete slash commands documentation
+- `/review-security` - Comprehensive security audit
+- `/review-code` - Code quality review
+- `/create-component` - Generate React components
+- `/create-api-route` - Create API endpoints
+- `/add-test` - Generate test files
+- `/refactor` - Code improvement and cleanup
+- `/optimize` - Performance optimization
+- `/debug` - Systematic troubleshooting
 
 ### 🎯 Project Intake System (`.project-intake/`)
 
@@ -99,6 +110,17 @@ The Project Intake System automates the documentation and setup of existing proj
 
 ```
 project-intake-template/
+├── .claude/                    # Claude Code configuration
+│   └── commands/               # Slash command library
+│       ├── README.md          # Commands documentation
+│       ├── review-security.md # Security audit command
+│       ├── review-code.md     # Code review command
+│       ├── create-component.md# Component generation
+│       ├── create-api-route.md# API endpoint generation
+│       ├── add-test.md        # Test generation
+│       ├── refactor.md        # Code refactoring
+│       ├── optimize.md        # Performance optimization
+│       └── debug.md           # Debugging assistance
 ├── .github/                    # GitHub configuration
 │   ├── ISSUE_TEMPLATE/        # Issue templates
 │   ├── PROJECT_MANAGEMENT_GUIDE.md
@@ -177,9 +199,12 @@ project-intake-template/
 - Pull request workflows
 - Code review checklists
 
-### ✅ MCP Integration
+### ✅ Claude Code Integration
 
-- Pre-configured Playwright for browser automation
+- Pre-configured MCP servers (Playwright, filesystem, git, memory)
+- 8 custom slash commands for common development tasks
+- Security review and code quality automation
+- Component and API generation
 - Automated testing workflows
 - Subagent control for complex scenarios
 - Team collaboration setup
