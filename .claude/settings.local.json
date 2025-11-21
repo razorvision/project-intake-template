@@ -23,7 +23,9 @@
       "Bash(head -5 echo \"   ... and 3 more\" echo \"\" echo \"🚀 PHASE 3: ADVANCED (2 Low-Priority Issues)\" echo \"\" gh issue list --milestone \"Phase 3: Advanced Features\" --state open)",
       "Bash(gh issue close:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(gh issue view:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []

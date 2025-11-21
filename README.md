@@ -232,6 +232,8 @@ project-intake-template/
 ├── .pre-commit-config.yaml    # Pre-commit hooks configuration
 ├── .pre-commit-hooks-README.md # Pre-commit setup guide
 ├── .secrets.baseline          # Secret detection baseline
+├── pyproject.toml.template    # Python project configuration template
+├── PYPROJECT_GUIDE.md         # Python configuration guide
 ├── setup-labels.sh            # Label creation script (Unix)
 └── setup-labels.bat           # Label creation script (Windows)
 ```
