@@ -1,5 +1,17 @@
-blank_issues_enabled: true
+blank_issues_enabled: false
 contact_links:
   - name: 💬 Questions & Discussions
-    url: https://github.com/razorvision/safequote.io-React-Only/discussions
-    about: Ask questions and discuss ideas with the team
+    url: https://github.com/OWNER/REPO/discussions
+    about: Ask questions, discuss ideas, and get help from the community
+
+  - name: 🔒 Security Vulnerability
+    url: https://github.com/OWNER/REPO/security/advisories/new
+    about: Report security vulnerabilities privately (never create public issues for security bugs)
+
+  - name: 📖 Documentation
+    url: https://github.com/OWNER/REPO/tree/main#readme
+    about: Read the project documentation for setup guides and usage examples
+
+  - name: 💡 Feature Requests
+    url: https://github.com/OWNER/REPO/discussions/categories/ideas
+    about: Suggest and discuss new features with the community before creating an issue
