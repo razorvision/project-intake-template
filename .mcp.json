@@ -25,6 +25,12 @@
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-memory"],
       "env": {}
+    },
+    "context7": {
+      "transport": "stdio",
+      "command": "npx",
+      "args": ["-y", "@context7/mcp"],
+      "env": {}
     }
   }
 }

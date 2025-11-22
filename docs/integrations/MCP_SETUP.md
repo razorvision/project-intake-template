@@ -42,6 +42,7 @@ Project-scoped MCP servers detected:
 - filesystem
 - git
 - memory
+- context7
 
 Do you want to allow these servers? (yes/no)
 ```
@@ -66,7 +67,7 @@ You can also use the `/mcp` slash command within Claude Code to check server sta
 
 ### Current MCP Servers
 
-This template includes four official MCP servers from the Model Context Protocol organization:
+This template includes five MCP servers for enhanced development capabilities:
 
 #### 1. Playwright MCP Server
 - **Purpose:** Browser automation and automated testing
@@ -116,6 +117,18 @@ This template includes four official MCP servers from the Model Context Protocol
   - Create relationships between entities
   - Query stored knowledge
 
+#### 5. Context7 MCP Server
+- **Purpose:** Web scraping and content extraction
+- **Transport:** stdio (local process)
+- **Command:** `npx -y @context7/mcp`
+- **Capabilities:**
+  - Extract clean content from web pages
+  - Scrape structured data from websites
+  - Navigate and crawl web content
+  - Parse HTML and extract relevant information
+  - Handle dynamic content and JavaScript-rendered pages
+  - Useful for research, documentation, and data gathering
+
 ### Configuration File
 
 The `.mcp.json` file in the repository root contains:
@@ -147,6 +160,12 @@ The `.mcp.json` file in the repository root contains:
       "transport": "stdio",
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "env": {}
+    },
+    "context7": {
+      "transport": "stdio",
+      "command": "npx",
+      "args": ["-y", "@context7/mcp"],
       "env": {}
     }
   }
