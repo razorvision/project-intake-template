@@ -78,10 +78,13 @@ A comprehensive template repository for quickly bootstrapping new projects with 
 
 1. **Copy template files** to your project:
    ```bash
-   # Copy key directories
+   # Mac/Linux/Git Bash
    cp -r .github/ your-project/
    cp -r .claude/ your-project/
    cp -r docs/ your-project/
+
+   # Windows PowerShell
+   Copy-Item -Recurse .github, .claude, docs your-project/
    ```
    - ✅ *You should see: New `.github/`, `.claude/`, and `docs/` directories in your project*
 
@@ -109,9 +112,7 @@ A comprehensive template repository for quickly bootstrapping new projects with 
   - [Automation Tools](#-automation-tools)
   - [Git Workflow Protection](#️-git-workflow-protection)
 - [Repository Structure](#repository-structure)
-- [Key Features](#key-features)
 - [Customization](#customization)
-- [Project Management Workflow](#project-management-workflow)
 - [Best Practices](#best-practices)
 - [Documentation](#documentation)
 - [Support & Resources](#support--resources)
