@@ -60,12 +60,45 @@ pngquant --quality=65-80 docs/assets/screenshots/*.png
 
 ## Current Screenshots
 
+### GitHub Repository
+
 | Screenshot | Description | Used In |
 |------------|-------------|---------|
-| `github-labels.png` | Labels page after setup script | README.md |
 | `github-repo-main.png` | Repository main page | README.md |
+| `github-labels.png` | Labels page after setup script | README.md, GITHUB_LABELS.md |
 | `github-issue-templates.png` | Issue template chooser | TEMPLATE_USAGE.md |
 | `github-pr-template.png` | PR creation page | BRANCH_STRATEGY.md |
+| `github-pull-requests.png` | Pull requests list view | BRANCH_STRATEGY.md |
+| `github-actions.png` | GitHub Actions workflows tab | CI_MONITORING_GUIDE.md |
+
+### OAuth Documentation
+
+| Screenshot | Description | Used In |
+|------------|-------------|---------|
+| `github-oauth-docs.png` | GitHub OAuth app creation docs | AUTH_IMPLEMENTATION_GUIDE.md |
+| `google-oauth-docs.png` | Google OAuth documentation | AUTH_IMPLEMENTATION_GUIDE.md |
+
+### Database Providers
+
+| Screenshot | Description | Used In |
+|------------|-------------|---------|
+| `supabase-landing.png` | Supabase landing page | DATABASE_SETUP.md |
+| `neon-landing.png` | Neon database landing page | DATABASE_SETUP.md |
+| `planetscale-landing.png` | PlanetScale landing page | DATABASE_SETUP.md |
+
+### Deployment & Monitoring
+
+| Screenshot | Description | Used In |
+|------------|-------------|---------|
+| `vercel-landing.png` | Vercel dashboard/login | DOCKER_GUIDE.md |
+| `sentry-landing.png` | Sentry landing page | ENV_VARIABLES.md |
+
+### Documentation Sites
+
+| Screenshot | Description | Used In |
+|------------|-------------|---------|
+| `nextauth-docs.png` | NextAuth.js documentation | AUTH_IMPLEMENTATION_GUIDE.md |
+| `prisma-docs.png` | Prisma documentation | DATABASE_SETUP.md |
 
 ## Video Assets
 
