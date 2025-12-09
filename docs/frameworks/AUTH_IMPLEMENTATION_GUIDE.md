@@ -414,6 +414,8 @@ export async function GET() {
 
 ### GitHub OAuth
 
+![GitHub OAuth app creation documentation](../assets/screenshots/github-oauth-docs.png)
+
 1. Go to **GitHub > Settings > Developer settings > OAuth Apps**
 2. Click **New OAuth App**
 3. Fill in:
@@ -424,6 +426,8 @@ export async function GET() {
 
 ### Google OAuth
 
+![Google OAuth documentation](../assets/screenshots/google-oauth-docs.png)
+
 1. Go to **Google Cloud Console > APIs & Services > Credentials**
 2. Click **Create Credentials > OAuth client ID**
 3. Application type: **Web application**
@@ -431,6 +435,8 @@ export async function GET() {
    - `http://localhost:3000/api/auth/callback/google`
    - `https://yourdomain.com/api/auth/callback/google`
 5. Copy Client ID and Client Secret
+
+![NextAuth.js documentation](../assets/screenshots/nextauth-docs.png)
 
 ## TypeScript Extensions
 

@@ -70,6 +70,8 @@ Download from [postgresapp.com](https://postgresapp.com/), install, and start.
 
 ### Cloud Providers (Free Tiers)
 
+![Supabase - The Open Source Firebase Alternative](../../assets/screenshots/supabase-landing.png)
+
 #### Supabase (Recommended for beginners)
 
 1. Create account at [supabase.com](https://supabase.com)
@@ -82,6 +84,8 @@ DATABASE_URL="postgresql://postgres:[PASSWORD]@db.[PROJECT_REF].supabase.co:5432
 ```
 
 #### Neon (Recommended for serverless)
+
+![Neon - Serverless Postgres](../../assets/screenshots/neon-landing.png)
 
 1. Create account at [neon.tech](https://neon.tech)
 2. Create new project
@@ -135,6 +139,8 @@ DATABASE_URL="mysql://root:password@localhost:3306/myapp_dev"
 ### Cloud Providers
 
 #### PlanetScale (Recommended for MySQL)
+
+![PlanetScale - Serverless MySQL Platform](../../assets/screenshots/planetscale-landing.png)
 
 1. Create account at [planetscale.com](https://planetscale.com)
 2. Create new database
@@ -238,6 +244,8 @@ DATABASE_URL="mongodb+srv://[USER]:[PASSWORD]@[CLUSTER].mongodb.net/[DATABASE]"
 ---
 
 ## Prisma Setup
+
+![Prisma - Next-generation Node.js and TypeScript ORM](../../assets/screenshots/prisma-docs.png)
 
 ### Installation
 

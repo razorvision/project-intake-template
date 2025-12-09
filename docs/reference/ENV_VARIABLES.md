@@ -241,6 +241,8 @@ UPLOADTHING_APP_ID="xxx"
 
 ### Sentry
 
+![Sentry - Application Performance Monitoring & Error Tracking](../assets/screenshots/sentry-landing.png)
+
 | Variable | Required | Description |
 |----------|----------|-------------|
 | `SENTRY_DSN` | No | Sentry Data Source Name |

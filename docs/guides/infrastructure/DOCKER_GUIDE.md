@@ -495,6 +495,8 @@ docker network inspect <network_name>
 
 ## CI/CD Integration
 
+![Vercel - Deploy your frontend with confidence](../../assets/screenshots/vercel-landing.png)
+
 ### GitHub Actions
 
 ```yaml

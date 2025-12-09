@@ -84,6 +84,8 @@ A comprehensive template repository for quickly bootstrapping new projects with 
 1. **Click "Use this template"** button at the top of this page
    - ✅ *You should see: "Create a new repository" page*
 
+![Repository main page showing the "Use this template" button](docs/assets/screenshots/github-repo-main.png)
+
 2. **Create your repository** with your project name
    - ✅ *You should see: Your new repository page*
 
@@ -97,6 +99,8 @@ A comprehensive template repository for quickly bootstrapping new projects with 
    # OR: scripts\setup-labels.bat   # (Windows)
    ```
    - ✅ *You should see: "Created label: priority: high" (and 40+ more labels)*
+
+![GitHub labels page showing organized labels by category](docs/assets/screenshots/github-labels.png)
 
 4. **Configure environment** - Edit `.env.local` with your values:
    ```bash
