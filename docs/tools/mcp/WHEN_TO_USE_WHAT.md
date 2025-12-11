@@ -1,3 +1,9 @@
+---
+title: MCP - When to Use What
+parent: Tools
+nav_order: 3
+---
+
 # MCP Servers: When to Use What
 
 This guide helps you choose the right MCP server for your task. Each server excels at specific use cases—using the right tool makes your workflow significantly faster.

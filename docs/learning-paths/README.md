@@ -1,3 +1,9 @@
+---
+title: Learning Paths
+nav_order: 11
+has_children: true
+---
+
 # Learning Paths
 
 Progressive learning modules designed to build skills step-by-step. Each path is a structured series of lessons that build on each other.

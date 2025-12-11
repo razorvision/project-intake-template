@@ -1,3 +1,9 @@
+---
+title: Code Examples
+nav_order: 12
+has_children: true
+---
+
 # Code Examples
 
 Practical, copy-paste-ready code examples for common patterns. All examples are production-tested and follow best practices.

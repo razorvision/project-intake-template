@@ -1,3 +1,9 @@
+---
+title: Tools
+nav_order: 8
+has_children: true
+---
+
 # Development Tools Guide
 
 Welcome to the RV 2.0 development tools ecosystem! This section teaches you how to use all the tools that make modern development efficient and enjoyable.

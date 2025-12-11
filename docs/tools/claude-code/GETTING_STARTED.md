@@ -1,3 +1,9 @@
+---
+title: Getting Started with Claude Code
+parent: Tools
+nav_order: 1
+---
+
 # Getting Started with Claude Code
 
 Welcome! This guide will get you productive with Claude Code in 30 minutes. By the end, you'll know how to use Claude Code effectively for daily development tasks.
