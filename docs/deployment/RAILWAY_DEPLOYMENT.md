@@ -378,6 +378,7 @@ export async function GET() {
 
 ## CI/CD with GitHub Actions
 
+{% raw %}
 ```yaml
 # .github/workflows/deploy.yml
 name: Deploy to Railway
@@ -410,6 +411,7 @@ jobs:
           railway_token: ${{ secrets.RAILWAY_TOKEN }}
           service: web
 ```
+{% endraw %}
 
 ## Database Migrations
 

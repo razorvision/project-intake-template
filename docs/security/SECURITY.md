@@ -193,7 +193,9 @@ element.innerHTML = DOMPurify.sanitize(userInput);
 <div>{userInput}</div>
 
 // Dangerous - only use with trusted content
+{% raw %}
 <div dangerouslySetInnerHTML={{ __html: sanitizedContent }} />
+{% endraw %}
 ```
 
 ### 6. Authentication & Authorization

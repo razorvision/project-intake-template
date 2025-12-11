@@ -107,6 +107,7 @@ src/
 
 ### Auth Provider (Client Components)
 
+{% raw %}
 ```tsx
 // components/auth/AuthProvider.tsx
 'use client'
@@ -168,6 +169,7 @@ export function useAuth() {
   return context
 }
 ```
+{% endraw %}
 
 ### Login Form
 

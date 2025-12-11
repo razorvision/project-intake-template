@@ -69,6 +69,7 @@ my-app/
 
 ### Basic Setup
 
+{% raw %}
 ```tsx
 // app/_layout.tsx
 import { Stack } from 'expo-router';
@@ -85,9 +86,11 @@ export default function RootLayout() {
   );
 }
 ```
+{% endraw %}
 
 ### Tab Navigator
 
+{% raw %}
 ```tsx
 // app/(tabs)/_layout.tsx
 import { Tabs } from 'expo-router';
@@ -118,6 +121,7 @@ export default function TabLayout() {
   );
 }
 ```
+{% endraw %}
 
 ### Protected Routes
 
@@ -542,6 +546,7 @@ function App() {
 
 ### 4. Keyboard Avoiding Views
 
+{% raw %}
 ```tsx
 import { KeyboardAvoidingView, Platform } from 'react-native';
 
@@ -556,6 +561,7 @@ function FormScreen() {
   );
 }
 ```
+{% endraw %}
 
 ### 5. Safe Area Handling
 

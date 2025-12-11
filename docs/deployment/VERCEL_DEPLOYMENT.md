@@ -406,6 +406,7 @@ vercel logs --follow
 
 ## CI/CD with GitHub Actions
 
+{% raw %}
 ```yaml
 # .github/workflows/deploy.yml
 name: Deploy to Vercel
@@ -443,6 +444,7 @@ jobs:
           vercel-project-id: ${{ secrets.PROJECT_ID }}
           vercel-args: '--prod'
 ```
+{% endraw %}
 
 ## Troubleshooting
 

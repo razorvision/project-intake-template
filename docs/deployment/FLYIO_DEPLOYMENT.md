@@ -380,6 +380,7 @@ fly certs show myapp.com
 
 ### GitHub Actions
 
+{% raw %}
 ```yaml
 # .github/workflows/deploy.yml
 name: Deploy to Fly.io
@@ -403,6 +404,7 @@ jobs:
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
 ```
+{% endraw %}
 
 ### Get API Token
 

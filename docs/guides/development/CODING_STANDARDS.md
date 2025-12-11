@@ -236,6 +236,7 @@ const query = `SELECT * FROM users WHERE email = '${email}'`; // SQL injection r
 
 ### XSS Prevention
 
+{% raw %}
 ```tsx
 // ✅ Good: React automatically escapes JSX content
 <div>{userInput}</div>
@@ -247,6 +248,7 @@ const query = `SELECT * FROM users WHERE email = '${email}'`; // SQL injection r
 import DOMPurify from 'dompurify';
 const sanitized = DOMPurify.sanitize(untrustedHTML);
 ```
+{% endraw %}
 
 ### Authentication & Authorization
 

@@ -286,6 +286,7 @@ const MemoizedList = memo(function List({ items, onSelect }) {
 
 ### When NOT to Memoize
 
+{% raw %}
 ```typescript
 // ❌ Don't memoize simple operations
 const fullName = useMemo(() => `${first} ${last}`, [first, last]);
@@ -302,9 +303,11 @@ const MemoizedChild = memo(Child);
 // If parent always passes new objects, memo is useless
 <MemoizedChild data={{ ...newObjectEveryTime }} />
 ```
+{% endraw %}
 
 ### Virtualization for Long Lists
 
+{% raw %}
 ```typescript
 import { useVirtualizer } from '@tanstack/react-virtual';
 
@@ -346,6 +349,7 @@ function VirtualList({ items }) {
   );
 }
 ```
+{% endraw %}
 
 ### Avoiding Unnecessary Re-renders
 
