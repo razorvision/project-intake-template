@@ -1,0 +1,27 @@
+// RazorVision Color Scheme for Just the Docs
+
+// Brand colors
+$razorvision-blue: #43B6E7;
+$razorvision-dark: #393939;
+$razorvision-light: #f5f5f5;
+
+// Override Just the Docs color variables
+$link-color: $razorvision-blue;
+$btn-primary-color: $razorvision-blue;
+$base-button-color: $razorvision-blue;
+$sidebar-color: $razorvision-light;
+
+// Body colors
+$body-background-color: #fff;
+$body-heading-color: $razorvision-dark;
+$body-text-color: #5c5962;
+
+// Code colors
+$code-background-color: #f6f8fa;
+$code-linenumber-color: #959396;
+
+// Border colors
+$border-color: #e5e5e5;
+
+// Focus colors
+$focus-color: rgba($razorvision-blue, 0.25);
