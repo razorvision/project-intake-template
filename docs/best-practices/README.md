@@ -1,3 +1,9 @@
+---
+title: Best Practices
+nav_order: 10
+has_children: true
+---
+
 # Best Practices
 
 Consolidated patterns, anti-patterns, and design decisions to help you write better code and build better systems.

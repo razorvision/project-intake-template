@@ -1,3 +1,9 @@
+---
+title: "Lesson 1: Setup and Configuration"
+parent: Learning Paths
+nav_order: 1
+---
+
 # Lesson 1: Setup and Configuration
 
 **Time:** 20 minutes

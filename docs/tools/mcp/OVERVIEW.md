@@ -1,3 +1,9 @@
+---
+title: MCP Overview
+parent: Tools
+nav_order: 2
+---
+
 # MCP Ecosystem Overview
 
 The Model Context Protocol (MCP) is an open standard that allows Claude Code to connect to external tools, databases, and services. Think of MCP servers as "plugins" that extend Claude's capabilities.

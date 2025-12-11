@@ -1,3 +1,9 @@
+---
+title: FAQ
+parent: Troubleshooting
+nav_order: 1
+---
+
 # Frequently Asked Questions (FAQ)
 
 Quick answers to common questions. Use Ctrl+F to search for your question.

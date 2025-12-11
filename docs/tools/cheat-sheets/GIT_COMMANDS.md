@@ -1,3 +1,9 @@
+---
+title: Git Commands Cheat Sheet
+parent: Tools
+nav_order: 4
+---
+
 # Git Commands Cheat Sheet
 
 Quick reference for common git operations. All commands assume you're in a git repository.

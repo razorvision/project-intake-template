@@ -1,3 +1,9 @@
+---
+title: Decision Trees
+parent: Best Practices
+nav_order: 1
+---
+
 # Decision Trees
 
 Visual flowcharts to help you make common technical decisions. Follow the questions to reach the right choice for your situation.

@@ -1,3 +1,9 @@
+---
+title: Troubleshooting
+nav_order: 9
+has_children: true
+---
+
 # Troubleshooting Guide
 
 When things go wrong, start here. This section provides step-by-step debugging guides, flowcharts, and solutions for common issues.
