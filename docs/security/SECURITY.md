@@ -1,3 +1,9 @@
+---
+title: Security Policy
+parent: Security
+nav_order: 1
+---
+
 # Security Policy
 
 ## Reporting a Vulnerability

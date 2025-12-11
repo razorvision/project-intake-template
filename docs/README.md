@@ -1,6 +1,6 @@
 # Documentation Index
 
-Comprehensive documentation for the project-intake-template repository.
+Comprehensive documentation for the RV 2.0 project.
 
 > **Looking for quick answers?** See [Common Tasks](COMMON_TASKS.md) for day-to-day development reference.
 

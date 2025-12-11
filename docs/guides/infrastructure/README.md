@@ -1,3 +1,10 @@
+---
+title: Infrastructure
+parent: Guides
+has_children: true
+nav_order: 3
+---
+
 # Infrastructure Guides
 
 Setup, deployment, and operational procedures for managing project infrastructure.

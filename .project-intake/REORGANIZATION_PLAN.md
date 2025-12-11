@@ -1,6 +1,6 @@
 # Documentation Reorganization Plan
 
-**Repository:** razorvision/project-intake-template
+**Repository:** razorvision/RV_2.0
 **Date:** 2025-12-08
 **Purpose:** Improve navigation and discoverability for new team members
 

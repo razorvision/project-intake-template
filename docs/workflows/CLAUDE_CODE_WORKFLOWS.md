@@ -1,3 +1,9 @@
+---
+title: Claude Code Workflows
+parent: Workflows
+nav_order: 1
+---
+
 # Claude Code Workflows & Best Practices
 
 This guide documents effective workflows and usage patterns for Claude Code based on official Anthropic best practices and team learnings.

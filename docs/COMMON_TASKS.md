@@ -1,3 +1,8 @@
+---
+title: Common Tasks
+nav_order: 2
+---
+
 # Common Development Tasks
 
 Quick reference for everyday development activities. **Bookmark this page!**

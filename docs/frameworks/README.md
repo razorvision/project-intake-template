@@ -1,3 +1,9 @@
+---
+title: Frameworks
+nav_order: 5
+has_children: true
+---
+
 # Framework Guides
 
 This directory contains framework-specific documentation, patterns, and gotchas for common tech stacks.

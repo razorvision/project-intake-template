@@ -1,7 +1,7 @@
-# Project Intake Template - Video Walkthrough Script
+# RV 2.0 - Video Walkthrough Script
 
 **Duration:** 8-10 minutes
-**Target Audience:** Developers new to the template
+**Target Audience:** Developers new to the project
 **Recording Tool:** Loom, OBS, or screen recording of choice
 
 ---
@@ -24,7 +24,7 @@
 **On screen:** GitHub repo main page
 
 **Script:**
-> "Hey! In this video, I'll show you how to use the Project Intake Template to set up a new project with best practices in under 10 minutes.
+> "Hey! In this video, I'll show you how to use RV 2.0 to set up a new project with best practices in under 10 minutes.
 >
 > This template gives you GitHub labels, issue templates, PR templates, Claude Code integration, and comprehensive documentation - all pre-configured and ready to customize."
 

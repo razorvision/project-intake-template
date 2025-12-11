@@ -1,3 +1,9 @@
+---
+title: MCP Setup
+parent: Integrations
+nav_order: 2
+---
+
 # MCP Server Setup Guide
 
 This repository uses Model Context Protocol (MCP) servers to enhance Claude Code's capabilities for automated testing and workflow automation.
@@ -70,7 +76,7 @@ When you clone this repository, the `.mcp.json` configuration file is already in
 
 ```bash
 # Navigate to the project directory
-cd project-intake-template
+cd RV_2.0
 
 # Start Claude Code
 claude

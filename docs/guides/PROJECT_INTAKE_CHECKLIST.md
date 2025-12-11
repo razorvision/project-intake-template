@@ -5,7 +5,7 @@ A comprehensive checklist for setting up new projects from scratch. Use this as 
 ## Phase 1: Repository Setup
 
 ### Initial Creation
-- [ ] Create repository from template (if using project-intake-template)
+- [ ] Create repository from template (if using RV 2.0 template)
 - [ ] Clone repository locally
 - [ ] Verify `.gitignore` covers your tech stack
 - [ ] Set up branch protection rules (see [Repo Setup Guide](./REPO_SETUP_GUIDE.md))

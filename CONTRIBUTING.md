@@ -1,4 +1,4 @@
-# Contributing to Project Intake Template
+# Contributing to RV 2.0
 
 Thank you for your interest in contributing! This guide will help you get started.
 
@@ -34,12 +34,12 @@ Before contributing, ensure you have:
 1. **Fork the repository** on GitHub
 2. **Clone your fork**:
    ```bash
-   git clone https://github.com/your-username/project-intake-template.git
-   cd project-intake-template
+   git clone https://github.com/your-username/RV_2.0.git
+   cd RV_2.0
    ```
 3. **Add upstream remote**:
    ```bash
-   git remote add upstream https://github.com/razorvision/project-intake-template.git
+   git remote add upstream https://github.com/razorvision/RV_2.0.git
    ```
 4. **Install dependencies** (if any):
    ```bash
@@ -60,9 +60,9 @@ We welcome various types of contributions:
 
 ### Finding Something to Work On
 
-- Browse [open issues](https://github.com/razorvision/project-intake-template/issues)
+- Browse [open issues](https://github.com/razorvision/RV_2.0/issues)
 - Look for issues labeled `good first issue` or `help wanted`
-- Check the [project board](https://github.com/razorvision/project-intake-template/projects) for planned work
+- Check the [project board](https://github.com/razorvision/RV_2.0/projects) for planned work
 - Propose new ideas by opening an issue first
 
 ## Development Workflow
@@ -286,8 +286,8 @@ Use the [feature request template](.github/ISSUE_TEMPLATE/feature_request.md).
 
 - **Documentation questions:** Check the [docs/](docs/) directory
 - **Setup issues:** See [POST_TEMPLATE_CHECKLIST.md](docs/getting-started/POST_TEMPLATE_CHECKLIST.md)
-- **General questions:** Open a [discussion](https://github.com/razorvision/project-intake-template/discussions)
-- **Bugs or issues:** Open an [issue](https://github.com/razorvision/project-intake-template/issues)
+- **General questions:** Open a [discussion](https://github.com/razorvision/RV_2.0/discussions)
+- **Bugs or issues:** Open an [issue](https://github.com/razorvision/RV_2.0/issues)
 
 ### Communication
 

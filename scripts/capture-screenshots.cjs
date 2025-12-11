@@ -24,31 +24,31 @@ const SCREENSHOTS = [
   // === GitHub Repository Pages ===
   {
     name: 'github-repo-main.png',
-    url: 'https://github.com/razorvision/project-intake-template',
+    url: 'https://github.com/razorvision/RV_2.0',
     description: 'Repository main page',
     waitFor: 'networkidle'
   },
   {
     name: 'github-labels.png',
-    url: 'https://github.com/razorvision/project-intake-template/labels',
+    url: 'https://github.com/razorvision/RV_2.0/labels',
     description: 'GitHub labels page',
     waitFor: 'networkidle'
   },
   {
     name: 'github-issue-templates.png',
-    url: 'https://github.com/razorvision/project-intake-template/issues/new/choose',
+    url: 'https://github.com/razorvision/RV_2.0/issues/new/choose',
     description: 'Issue template chooser',
     waitFor: 'networkidle'
   },
   {
     name: 'github-actions.png',
-    url: 'https://github.com/razorvision/project-intake-template/actions',
+    url: 'https://github.com/razorvision/RV_2.0/actions',
     description: 'GitHub Actions workflows',
     waitFor: 'networkidle'
   },
   {
     name: 'github-pull-requests.png',
-    url: 'https://github.com/razorvision/project-intake-template/pulls',
+    url: 'https://github.com/razorvision/RV_2.0/pulls',
     description: 'Pull requests list',
     waitFor: 'networkidle'
   },

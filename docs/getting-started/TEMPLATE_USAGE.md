@@ -1,3 +1,9 @@
+---
+title: Template Usage
+parent: Getting Started
+nav_order: 1
+---
+
 # Template Repository Usage Guide
 
 This repository is a **template** designed to help you quickly set up new projects with best practices, established workflows, and comprehensive tooling already configured.
@@ -67,7 +73,7 @@ If you prefer to copy files manually:
 2. **Download this template:**
    ```bash
    # Download as ZIP or clone
-   git clone https://github.com/your-username/project-intake-template.git template-source
+   git clone https://github.com/your-username/RV_2.0.git template-source
    ```
 
 3. **Copy files to your new repository:**
@@ -374,7 +380,7 @@ If you want to pull in updates from the original template:
 
 ```bash
 # Add template as remote
-git remote add template https://github.com/original-org/project-intake-template.git
+git remote add template https://github.com/original-org/RV_2.0.git
 
 # Fetch template changes
 git fetch template

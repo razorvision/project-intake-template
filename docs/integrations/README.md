@@ -1,3 +1,9 @@
+---
+title: Integrations
+nav_order: 7
+has_children: true
+---
+
 # Integrations
 
 Guides for setting up external tools and services with this project.

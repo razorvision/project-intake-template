@@ -1,3 +1,9 @@
+---
+title: MCP Servers Guide
+parent: Integrations
+nav_order: 3
+---
+
 # MCP Servers Guide
 
 Guide to setting up and using Model Context Protocol (MCP) servers with Claude Code. MCP servers extend Claude's capabilities with specialized tools.

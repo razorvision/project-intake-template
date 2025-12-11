@@ -1,6 +1,6 @@
 # Scripts & Automation
 
-Automation scripts and utilities for the project-intake-template repository.
+Automation scripts and utilities for the RV 2.0 project.
 
 ## 📜 Available Scripts
 

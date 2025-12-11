@@ -1,3 +1,9 @@
+---
+title: Deployment
+nav_order: 8
+has_children: true
+---
+
 # Deployment Guides
 
 Step-by-step guides for deploying your application to various platforms.

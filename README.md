@@ -1,12 +1,12 @@
-# Project Intake Template Repository
+# RV 2.0
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green.svg)](https://nodejs.org/)
-[![GitHub Issues](https://img.shields.io/github/issues/razorvision/project-intake-template.svg)](https://github.com/razorvision/project-intake-template/issues)
-[![GitHub Stars](https://img.shields.io/github/stars/razorvision/project-intake-template.svg)](https://github.com/razorvision/project-intake-template/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/razorvision/RV_2.0.svg)](https://github.com/razorvision/RV_2.0/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/razorvision/RV_2.0.svg)](https://github.com/razorvision/RV_2.0/stargazers)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-A comprehensive template repository for quickly bootstrapping new projects with best practices, established workflows, automated tooling, and complete documentation infrastructure.
+RV 2.0 project repository.
 
 > **🎯 85-90% time savings** on project setup (7-10 hours → 1-2 hours)
 

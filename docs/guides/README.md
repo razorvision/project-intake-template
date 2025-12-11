@@ -1,3 +1,9 @@
+---
+title: Guides
+nav_order: 4
+has_children: true
+---
+
 # Guides
 
 Comprehensive guides organized by category to help team members be productive.

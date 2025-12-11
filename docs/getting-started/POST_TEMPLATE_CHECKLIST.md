@@ -1,3 +1,9 @@
+---
+title: Post-Template Checklist
+parent: Getting Started
+nav_order: 2
+---
+
 # Post-Template Setup Checklist
 
 After creating a new repository from this template, follow this checklist to customize it for your project. Complete each section in order for best results.

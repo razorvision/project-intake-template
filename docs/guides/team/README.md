@@ -1,3 +1,10 @@
+---
+title: Team
+parent: Guides
+has_children: true
+nav_order: 2
+---
+
 # Team Guides
 
 Collaboration processes, communication standards, and team workflows.

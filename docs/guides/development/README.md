@@ -1,3 +1,10 @@
+---
+title: Development
+parent: Guides
+has_children: true
+nav_order: 1
+---
+
 # Development Guides
 
 Day-to-day coding standards, patterns, and best practices for building quality software.

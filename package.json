@@ -1,7 +1,7 @@
 {
-  "name": "project-intake-template",
+  "name": "rv-2.0",
   "version": "1.0.0",
-  "description": "GitHub template repository with automated project setup system",
+  "description": "RV 2.0 project",
   "type": "module",
   "scripts": {
     "validate-config": "node .project-intake/scripts/validate-config.cjs",

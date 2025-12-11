@@ -1,3 +1,9 @@
+---
+title: MCP Quick Start
+parent: Integrations
+nav_order: 1
+---
+
 # MCP Quick Start
 
 **Get Claude Code's MCP servers running in 5 minutes.**

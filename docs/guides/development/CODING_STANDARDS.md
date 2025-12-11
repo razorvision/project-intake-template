@@ -1,3 +1,10 @@
+---
+title: Coding Standards
+parent: Development
+grand_parent: Guides
+nav_order: 1
+---
+
 # Coding Standards
 
 This document outlines the coding conventions, best practices, and standards for this project. Following these guidelines ensures code consistency, maintainability, and quality across the team.

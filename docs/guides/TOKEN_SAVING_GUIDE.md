@@ -1,3 +1,9 @@
+---
+title: Token Saving Guide
+parent: Guides
+nav_order: 1
+---
+
 # Token Saving Guide for Claude Code
 
 This guide documents strategies to minimize token usage and maximize the value of your Claude Code sessions.

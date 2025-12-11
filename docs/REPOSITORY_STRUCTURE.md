@@ -1,11 +1,11 @@
 # Repository Structure
 
-Complete directory structure of the Project Intake Template repository.
+Complete directory structure of the RV 2.0 repository.
 
 ## Full Directory Tree
 
 ```
-project-intake-template/
+RV_2.0/
 ├── .claude/                    # Claude Code configuration
 │   ├── README.md              # Configuration guide
 │   ├── settings.json.template # Project permissions template
