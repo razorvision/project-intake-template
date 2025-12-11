@@ -1,3 +1,10 @@
+---
+layout: default
+title: Authentication Implementation Guide
+parent: Frameworks
+nav_order: 1
+---
+
 # Authentication Implementation Guide
 
 Step-by-step guide for implementing authentication in web applications, with a focus on NextAuth.js but applicable patterns for other providers.

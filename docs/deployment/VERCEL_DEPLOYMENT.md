@@ -1,3 +1,10 @@
+---
+layout: default
+title: Vercel Deployment Guide
+parent: Deployment
+nav_order: 3
+---
+
 # Vercel Deployment Guide
 
 Complete guide for deploying Next.js applications to Vercel.

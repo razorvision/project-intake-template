@@ -1,3 +1,10 @@
+---
+layout: default
+title: Fly.io Deployment Guide
+parent: Deployment
+nav_order: 1
+---
+
 # Fly.io Deployment Guide
 
 Complete guide for deploying containerized applications to Fly.io.

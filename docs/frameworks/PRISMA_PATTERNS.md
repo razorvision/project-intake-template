@@ -1,3 +1,10 @@
+---
+layout: default
+title: Prisma Patterns
+parent: Frameworks
+nav_order: 7
+---
+
 # Prisma Patterns
 
 This guide covers patterns, configurations, and gotchas for Prisma ORM projects.

@@ -1,3 +1,10 @@
+---
+layout: default
+title: Railway Deployment Guide
+parent: Deployment
+nav_order: 2
+---
+
 # Railway Deployment Guide
 
 Complete guide for deploying full-stack applications to Railway.

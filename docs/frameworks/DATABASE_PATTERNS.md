@@ -1,3 +1,10 @@
+---
+layout: default
+title: Database Patterns
+parent: Frameworks
+nav_order: 2
+---
+
 # Database Patterns
 
 Best practices for database design, queries, and data management using Prisma with PostgreSQL.

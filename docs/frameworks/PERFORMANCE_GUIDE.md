@@ -1,3 +1,10 @@
+---
+layout: default
+title: Performance Optimization Guide
+parent: Frameworks
+nav_order: 6
+---
+
 # Performance Optimization Guide
 
 Strategies for building fast, responsive applications with focus on Core Web Vitals and user experience.

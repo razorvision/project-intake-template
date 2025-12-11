@@ -1,3 +1,10 @@
+---
+layout: default
+title: Supabase Patterns
+parent: Frameworks
+nav_order: 9
+---
+
 # Supabase Patterns
 
 Patterns, best practices, and common gotchas for building applications with Supabase.

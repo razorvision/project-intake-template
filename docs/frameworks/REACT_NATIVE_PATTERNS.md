@@ -1,3 +1,10 @@
+---
+layout: default
+title: React Native Patterns
+parent: Frameworks
+nav_order: 8
+---
+
 # React Native Patterns
 
 Patterns, best practices, and common gotchas for React Native development with Expo.

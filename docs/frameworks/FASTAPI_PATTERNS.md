@@ -1,3 +1,10 @@
+---
+layout: default
+title: FastAPI Patterns
+parent: Frameworks
+nav_order: 3
+---
+
 # FastAPI Patterns
 
 Patterns, best practices, and common gotchas for building APIs with FastAPI.

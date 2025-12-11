@@ -1,3 +1,10 @@
+---
+layout: default
+title: Next.js Patterns
+parent: Frameworks
+nav_order: 5
+---
+
 # Next.js Patterns
 
 This guide covers patterns, configurations, and gotchas for Next.js projects, with a focus on the App Router (Next.js 13+).

@@ -1,3 +1,10 @@
+---
+layout: default
+title: NextAuth.js Patterns
+parent: Frameworks
+nav_order: 4
+---
+
 # NextAuth.js Patterns
 
 This guide covers patterns, configurations, and gotchas for NextAuth.js (Auth.js) authentication.
