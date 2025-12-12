@@ -29,7 +29,7 @@ Comprehensive documentation organized to teach best practices and efficient tool
       <div style="font-size: 1.1rem; font-weight: 600; color: #5ac8fa; margin-bottom: 0.5rem;">🎓 NEW TO AI CODING</div>
       <div style="margin: 1rem 0; color: #ccc;">Start here!</div>
       <div style="font-weight: 600; margin-bottom: 0.5rem;">→ Learning Paths</div>
-      <a href="learning-paths/" style="color: #43B6E7; text-decoration: none; font-size: 0.9rem;">/learning-paths/</a>
+      <a href="learning-paths/README.html" style="color: #43B6E7; text-decoration: none; font-size: 0.9rem;">/learning-paths/</a>
     </div>
 
     <div style="background: rgba(0, 0, 0, 0.3); border: 2px solid rgba(67, 182, 231, 0.4); border-radius: 8px; padding: 1.5rem; text-align: center;">
@@ -43,7 +43,7 @@ Comprehensive documentation organized to teach best practices and efficient tool
       <div style="font-size: 1.1rem; font-weight: 600; color: #5ac8fa; margin-bottom: 0.5rem;">🐛 SPECIFIC ISSUE</div>
       <div style="margin: 1rem 0; color: #ccc;">Debug it!</div>
       <div style="font-weight: 600; margin-bottom: 0.5rem;">→ Troubleshooting</div>
-      <a href="troubleshooting/" style="color: #43B6E7; text-decoration: none; font-size: 0.9rem;">/troubleshooting/</a>
+      <a href="troubleshooting/README.html" style="color: #43B6E7; text-decoration: none; font-size: 0.9rem;">/troubleshooting/</a>
     </div>
   </div>
 </div>
