@@ -37,6 +37,14 @@ jobs:
       - name: Generate HTML report
         run: node scripts/generate-report.mjs
 
+      - name: Check generated files
+        run: |
+          echo "=== Files modified ==="
+          git diff --name-only
+          echo ""
+          echo "=== Git status ==="
+          git status
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
