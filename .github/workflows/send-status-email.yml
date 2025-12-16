@@ -4,14 +4,25 @@ on:
   pull_request:
     types: [closed]
     branches: [master, main]
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Action to perform'
+        required: true
+        default: 'send_to_all'
+        type: choice
+        options:
+          - send_test
+          - send_to_all
 
 jobs:
   send-email:
     name: Send Email
-    # Only run if PR was merged (closed + merged = true)
+    # Only run if PR was merged (closed + merged = true), or manual dispatch
     if: |
-      github.event.pull_request.merged == true &&
-      startsWith(github.event.pull_request.title, 'Status Report')
+      (github.event.pull_request.merged == true &&
+       startsWith(github.event.pull_request.title, 'Status Report')) ||
+      github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
@@ -20,7 +31,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          ref: ${{ github.event.pull_request.merge_commit_sha }}
+          ref: ${{ github.event.pull_request.merge_commit_sha || github.sha }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -32,17 +43,38 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Send email
+      - name: Send test email to me
+        if: github.event_name == 'pull_request'
         run: node scripts/send-email.mjs
         env:
-          GMAIL_CLIENT_ID: ${{ secrets.GMAIL_CLIENT_ID }}
-          GMAIL_CLIENT_SECRET: ${{ secrets.GMAIL_CLIENT_SECRET }}
-          GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
-          EMAIL_RECIPIENTS: ${{ secrets.EMAIL_RECIPIENTS }}
-          GMAIL_FROM_EMAIL: ${{ secrets.GMAIL_FROM_EMAIL || 'noreply@razorvision.net' }}
+          GMAIL_FROM_EMAIL: ${{ secrets.GMAIL_FROM_EMAIL }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EMAIL_RECIPIENTS: ${{ secrets.GMAIL_FROM_EMAIL }}
 
-      - name: Post success comment
-        if: success()
+      - name: Send email to all recipients
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.action == 'send_to_all'
+        run: node scripts/send-email.mjs
+        env:
+          GMAIL_FROM_EMAIL: ${{ secrets.GMAIL_FROM_EMAIL }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EMAIL_RECIPIENTS: ${{ secrets.EMAIL_RECIPIENTS }}
+
+      - name: Post test email comment with approval button
+        if: github.event_name == 'pull_request' && success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const workflowUrl = `${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}`;
+            const body = `📧 **Test email sent to you!**\n\nReview the email preview, then approve to send to all recipients:\n\n**[✅ APPROVE & SEND TO ALL](${workflowUrl})**\n\nOnce you click that link:\n1. Click the "Send email to all recipients" button in the Actions UI\n2. Select "send_to_all" from the dropdown\n3. Click "Run workflow"\n\nWorkflow run: ${workflowUrl}`;
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: body
+            })
+
+      - name: Post success comment (to all)
+        if: github.event_name == 'workflow_dispatch' && success()
         uses: actions/github-script@v7
         with:
           script: |
@@ -50,7 +82,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: '✅ Status report email sent successfully!'
+              body: '✅ Status report email sent successfully to all recipients!'
             })
 
       - name: Post failure comment
