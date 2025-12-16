@@ -36,11 +36,16 @@ async function generateReport() {
     const rawData = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
     console.log(`Processing ${rawData.itemCount} items from Notion...`);
 
-    // Filter for target clients only
-    const items = rawData.items.filter(item =>
-      TARGET_CLIENTS.some(client => item.client?.includes(client))
-    );
-    console.log(`Filtered to ${items.length} items for target clients`);
+    // Filter for target clients and exclude done/icebox statuses
+    const EXCLUDED_STATUSES = ['Done', 'Icebox'];
+    const items = rawData.items.filter(item => {
+      // Check if client matches
+      const isTargetClient = TARGET_CLIENTS.some(client => item.client?.includes(client));
+      // Check if status is not excluded
+      const isNotExcluded = !EXCLUDED_STATUSES.includes(item.status);
+      return isTargetClient && isNotExcluded;
+    });
+    console.log(`Filtered to ${items.length} items for target clients (excluding Done/Icebox)`);
 
     // Group items by priority
     const byPriority = {};
