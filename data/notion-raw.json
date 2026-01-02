@@ -764,7 +764,7 @@
       "id": "26a0b674-3c96-80b1-b090-ec3cbf35cb9c",
       "name": "Pay Frequency and Pay Date Verification Page",
       "status": "No status",
-      "priority": "2 - High",
+      "priority": "3 - Medium",
       "updates": "Infinity approved my approach so we can move forward with this. We’ll prioritize it this week above the autofund ticket since it’s ready.",
       "client": "WL",
       "url": "https://www.notion.so/Pay-Frequency-and-Pay-Date-Verification-Page-26a0b6743c9680b1b090ec3cbf35cb9c"
@@ -864,7 +864,7 @@
       "name": "GA4 Updates",
       "status": "No status",
       "priority": "2 - High",
-      "updates": "Claire is picking up the rest of this work. Matt had a handful of questions for her. She requested additional budget to review further.",
+      "updates": "This is complete. Claire has this to be sent back to Matt? There is a spreadsheet Luc will send me Dec 22",
       "client": "WL",
       "url": "https://www.notion.so/GA4-Updates-2a20b6743c9680349a3bd88e44e4b70f"
     },
@@ -879,12 +879,12 @@
     },
     {
       "id": "2a90b674-3c96-8070-bc18-f24ee4df28df",
-      "name": "Promo code bug for Lorien",
+      "name": "Promo code bug - WLPM-747 (This will unblock the business rules ticket)",
       "status": "No status",
-      "priority": "3 - Medium",
-      "updates": "Need to review - deprioritized.",
+      "priority": "1 - URGENT",
+      "updates": "Jeethu is going to add her test case to the ticket so Diego can pick it up and review Django admin promo code flow/rules.",
       "client": "WL",
-      "url": "https://www.notion.so/Promo-code-bug-for-Lorien-2a90b6743c968070bc18f24ee4df28df"
+      "url": "https://www.notion.so/Promo-code-bug-WLPM-747-This-will-unblock-the-business-rules-ticket-2a90b6743c968070bc18f24ee4df28df"
     },
     {
       "id": "2ae0b674-3c96-80f2-ae6e-e795dc3c74ac",
@@ -905,6 +905,6 @@
       "url": "https://www.notion.so/Create-new-RV-2-0-board-2b00b6743c9680649947d7c042589049"
     }
   ],
-  "fetchedAt": "2025-12-16T23:01:21.124Z",
+  "fetchedAt": "2026-01-02T14:07:09.737Z",
   "itemCount": 100
 }
